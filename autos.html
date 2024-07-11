@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actividad 3</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+
+<style>
+/* Alinear las imágenes horizontalmente */
+.social {
+display: flex;
+justify-content: center;
+gap: 10px; /* Espacio entre las imágenes */
+}
+
+.social_icon {
+display: inline-block;
+}
+	
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espacio entre las imágenes */
+  flex-wrap: wrap; /* Para que las imágenes se ajusten si el espacio es pequeño */
+}
+
+.galeria img {
+  margin: 10px;
+}
+	
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio entre cada div interno */
+}
+
+.contenedor img {
+  margin-right: 20px;
+}
+
+.contenedor h1 {
+  color: crimson;
+}
+
+#carro1 {
+	visibility: hidden;
+	position: absolute
+}
+#carro2 {
+	visibility: hidden;
+	position: absolute
+}
+#carro3 {
+	visibility: hidden;
+	position: absolute
+}
+#carro4 {
+	visibility: hidden;
+	position: absolute
+}
+#carro5 {
+	visibility: hidden;
+	position: absolute
+}
+#carro6 {
+	visibility: hidden;
+	position: absolute
+}
+#carro7 {
+	visibility: hidden;
+	position: absolute
+}
+</style>
+	
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">        
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				<a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="autos.html">Autos</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="mantenimiento.html">Mantenimiento</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="montallantas.html">Montallantas</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="otros.html">Alineación y  Balanceo</a>
+				</div>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="contacto.html">Contacto</a>
+				</li>
+			</ul>
+		<form class="form-inline my-2 my-lg-0">
+		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+		</form>
+		</div>
+	</div>
+	</nav>
+
+<hr>
+<h2 class="text-center">AUTOS</h2>
+<hr>
+	<div class="galeria" style="text-align: center">
+			
+			<img src="images/auto1.jpg" alt="" width="130" height="110" onMouseOver="MM_showHideLayers('carro1','','show','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')" onMouseOut="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')"/>
+			<img src="images/auto2.jpg" width="130" height="110" alt="" onMouseOver="MM_showHideLayers('carro1','','hide','carro2','','show','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')" onMouseOut="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')"/>
+			<img src="images/auto3.jpg" width="130" height="110" alt="" onMouseOver="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','show','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')" onMouseOut="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')"/>
+			<img src="images/auto4.jpg" width="130" height="110" alt="" onMouseOver="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','show','carro5','','hide','carro6','','hide','carro7','','hide')" onMouseOut="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')"/>
+			<img src="images/auto5.jpg" width="130" height="110" alt="" onMouseOver="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','show','carro6','','hide','carro7','','hide')" onMouseOut="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')"/>
+			<img src="images/auto6.jpg" width="130" height="110" alt="" onMouseOver="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','show','carro7','','hide')" onMouseOut="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')"/>
+			<img src="images/auto7.jpg" width="130" height="110" alt="" onMouseOver="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','show')" onMouseOut="MM_showHideLayers('carro1','','hide','carro2','','hide','carro3','','hide','carro4','','hide','carro5','','hide','carro6','','hide','carro7','','hide')"/>
+			
+	  </div>
+	
+	<br>
+	
+	<div class="contenedor" style="text-align: center">
+
+		<div id="carro1" style="display: flex;">
+			<img src="images/auto1.jpg" alt="Auto 1" width="250" height="250">
+			<h1 style="margin-left: 20px;  color: crimson">Ford Mustang</h1>
+		</div>
+
+		<div id="carro2" style="display: flex;">
+			<img src="images/auto2.jpg" alt="Auto 1" width="250" height="250">
+			<h1 style="margin-left: 20px;  color: crimson">Lotus Elise</h1>
+		</div>
+
+		<div id="carro3" style="display: flex;">
+			<img src="images/auto3.jpg" alt="Auto 1" width="250" height="250">
+			<h1 style="margin-left: 20px;  color: crimson">Bentley Continental</h1>
+		</div>
+
+		<div id="carro4" style="display: flex;">
+			<img src="images/auto4.jpg" alt="Auto 1" width="250" height="250">
+			<h1 style="margin-left: 20px;  color: crimson">Alfa Romeo Spider</h1>
+		</div>
+
+		<div id="carro5" style="display: flex;">
+			<img src="images/auto5.jpg" alt="Auto 1" width="250" height="250">
+			<h1 style="margin-left: 20px; color: crimson">Audi A8</h1>
+		</div>
+
+		<div id="carro6" style="display: flex;">
+			<img src="images/auto6.jpg" alt="Auto 1" width="250" height="250">
+			<h1 style="margin-left: 20px;  color: crimson">Opel GT</h1>
+		</div>
+
+		<div id="carro7" style="display: flex;">
+			<img src="images/auto7.jpg" alt="Auto 1" width="250" height="250">
+			<h1 style="margin-left: 20px;  color: crimson">Mercedes-AMG GT</h1>
+		</div>	
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+<hr>
+
+	<div class="social">
+		<p class="social_icon"><img src="images/facebook.png" width="100" alt="" class="thumbnail"/></p>
+		<p class="social_icon"><img src="images/instagram.png" width="100" alt="" class="thumbnail"/></p>
+		<p class="social_icon"><img src="images/whatsapp.png" width="100" alt="" class="thumbnail"/></p>
+		<p class="social_icon"><img src="images/youtube.png" width="100" alt="" class="thumbnail"/></p>
+	</div>
+
+<hr>
+
+<footer class="text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p>Copyright © MyWebsite. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
